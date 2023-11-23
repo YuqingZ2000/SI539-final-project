@@ -1,0 +1,287 @@
+/*Font size and color*/
+body{
+    margin: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
+    font-size: large;
+    background-color:aliceblue;
+}
+h1{
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+}
+h2{
+    font-size: x-large;
+    font-style: italic;
+    font-weight: bold;
+    color: darkblue;
+}
+h3{
+    font-size: large;
+    font-style: italic;
+    font-weight: bold;
+    color: darkblue;
+}
+p{
+    line-height: 0.6cm;
+    text-indent: 25px;
+    text-align: justify;
+}
+.likes{
+    display: inline-block;
+    margin-left: 50px;
+    list-style-type: square;
+}
+.media-credit{
+    font-size: x-small;
+    text-align: right;
+}
+.taglines{
+    font-size: medium;
+    font-style: italic;
+    font-weight: bold;
+    text-align: right;
+    color: darkblue;
+    padding-bottom: 5px;
+}
+footer{
+    color: black;
+    padding-top: 30px;
+    text-align: right;
+    font-size: medium;
+}
+
+/* Style the navigation bar */
+nav{
+    text-align: center;
+}
+.nav_links li{
+    display: inline-block;
+    margin-right: 10px;
+    padding: 5px;
+    font-size: x-large;
+}
+.nav_links li a:hover, a:focus{
+    color: darkblue;
+    text-decoration: underline;
+    -webkit-text-decoration-style: dotted;
+            text-decoration-style: dotted;
+}
+.active{
+    text-decoration-line: underline;
+    text-decoration-color: darkblue;
+    color: darkblue;
+}
+
+/* Style the skip class */
+.skip{
+    position: absolute;
+    top: -40px;
+}
+.skip:focus{
+    position: absolute;
+    top: 10px;
+    border: 2px solid black;
+    background: white;
+}
+
+
+/* CSS FOR INDEX */
+/* Add flex to Gallery_overview */
+.learn_more{
+    text-align: center;
+    font-size: larger;
+}
+.gallery_overview{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap; 
+}
+.gallery_overview img{
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    border: solid 5px darkkhaki;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+.gallery_overview img.selected, .gallery_overview img:hover{
+    border: solid 5px darkblue; 
+}
+.gallery_overview img:focus {
+    outline: none;
+    box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.5); 
+}
+#content1, #content2, #content3, #content4{
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+}
+
+/* Add grid to More Photos */
+.grid{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 10px 10px;
+    width: 95%;
+    margin: auto;
+    justify-content: center;
+    justify-items: center;
+}
+.grid img, video{
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 15px;
+    width: 300px;
+}
+.grid img:hover, video:hover{
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03);
+    transition: 0.5s ease;
+}
+
+
+/* CSS FOR BREEDS */
+/* Style mixbutton */
+.control{
+    display:inline-block;
+    border-radius:20px;
+    padding:10px 20px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+    margin: auto;
+    color: whitesmoke;
+    background-color: darkblue;
+    text-align:center;
+    font-size: medium;
+    margin:15px;
+}
+.control:hover, .control.selected{
+    background-color: whitesmoke;
+    color: darkblue;
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03);
+    transition: 0.5s ease;
+}
+.control:focus {
+    outline: none;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.5); 
+}
+
+/* Style container gallery */
+.container_gallery{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    gap: 20px;
+}
+.dogcard{
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: whitesmoke;
+    width: 300px;
+    height: 98%;
+    border:solid 5px rgba(189, 183, 107, 0.758);
+    border-radius: 30px;
+}
+.dogcard p{
+    text-indent: 0px;
+}
+.dogcard img{
+    margin: auto;
+    padding: 10px 10px 0px;
+    width: 100%;
+}
+
+
+/* CSS FOR MOVIES */
+.movie_container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap; 
+    gap: 30px;
+
+}
+.moviecard{
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: whitesmoke;
+    width: 90%;
+    height: 98%;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5); 
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: 98%;
+    justify-content: center;
+    align-items: end;
+    max-width: 900px;
+} 
+.moviecard p{
+    text-indent: 0px;
+}
+.moviecard img{
+    margin: auto;
+    padding: 10px;
+    width: 80%;
+}
+.moviecard:hover{
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03);
+    transition: 0.5s ease;
+}
+
+
+/* Add the media query */
+/* Media query when the screen-size is greater than 800px */
+@media screen and (min-width: 650px){
+    .moviecard{
+        grid-template-columns: 45% 50%;
+    } 
+    .moviecard h2{
+        grid-column: 1 / span 2;
+    }
+    .moviecard img{
+        grid-area: 2 / 1 / 5 / span 1;
+    }
+}
+
+
+/* Media query when the screen-size is greater than 900px */
+@media screen and (min-width: 900px){
+    .grid{
+        grid-template-columns: auto auto;
+    }
+    
+}
+
+
+/* Media query when the screen-size is greater than 1400px */
+@media screen and (min-width: 1400px){
+    .grid{
+        grid-template-columns: auto auto auto auto;
+    }
+}
+
+
+/* Media query for the reduced-motion mode */
+@media (prefers-reduced-motion: reduce) {
+    .grid img:hover, video:hover{
+        transform: scale(1);
+        transition: none;
+    }
+    .control:hover, .control.selected{
+        transform: scale(1);
+        transition: none;
+    }
+    .moviecard:hover{
+        transform: scale(1); 
+        transition: none;
+    }
+}
